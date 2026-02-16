@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Website</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
+
+body{
+  background:#111;
+  color:#fff;
+  scroll-behavior:smooth;
+}
+
+section{
+  min-height:100vh;
+  padding:80px 0;
+}
+
+/* HOME */
+#home{
+  background:url("https://themewagon.com/wp-content/uploads/2021/12/training-studio-1.png") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:45px;
+  font-weight:bold;
+}
+
+/* COMMON */
+.container{
+  width:80%;
+  margin:auto;
+  text-align:center;
+}
+
+.section-title{
+  font-size:28px;
+  font-weight:700;
+}
+
+.section-title span{
+  color:#d94d6a;
+}
+
+.section-subtitle{
+  color:#ccc;
+  font-size:14px;
+  margin-top:10px;
+}
+
+/* PROGRAM */
+#program{background:#fff;color:#333}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  background:#f2f2f2;
+  padding:20px;
+  border-radius:8px;
+}
+
+/* CLASSES */
+#classes{background:#f8f8f8;color:#333}
+
+.classes-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.classes-list{width:40%; text-align:left;}
+.class-details{width:55%; text-align:left;}
+
+.class-details img{
+  width:100%;
+  border-radius:6px;
+  margin-bottom:20px;
+}
+
+.view-all,.view-schedule{
+  background:#d94d6a;
+  color:#fff;
+  border:none;
+  padding:12px 25px;
+  border-radius:4px;
+  margin-top:20px;
+}
+
+/* SCHEDULE */
+#schedule{
+  background:url('https://t3.ftcdn.net/jpg/02/44/90/54/360_F_244905461_97QUheBJmM6bUuPALApfGGXbZjxL4OG4.jpg')
+  center/cover no-repeat;
+  background-blend-mode:multiply;
+  background-color:rgba(0,0,0,0.7);
+}
+
+.days{margin:40px 0}
+
+.days a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.schedule-table{
+  width:100%;
+  border-collapse:collapse;
+  background:rgba(255,255,255,0.05);
+}
+
+.schedule-table td{
+  border:1px solid rgba(255,255,255,0.2);
+  padding:15px;
+}
+
+/* TRAINERS */
+#trainers{background:#f8f8f8;color:#333}
+
+.trainers{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-top:50px;
+}
+
+.trainer-card{
+  background:#fff;
+  width:30%;
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.trainer-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.trainer-info{padding:20px;text-align:left;}
+.trainer-role{color:#d94d6a;font-size:13px}
+
+/* CONTACT */
+#contact{
+  background:#eee;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.contact-box{
+  background:#fff;
+  padding:30px;
+  border-radius:10px;
+  width:320px;
+  color:#333;
+}
+
+.contact-box input,
+.contact-box textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+/* MAP — IMPORTANT FIX */
+#map{
+  background:#ddd;
+  padding:60px 0;
+}
+
+.map-container{
+  width:90%;
+  max-width:900px;
+  margin:auto;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<section id="home">
+  GYM WEBSITE
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+<div class="container">
+<h2 class="section-title">CHOOSE <span>PROGRAM</span></h2>
+
+<div class="grid">
+<div class="card">Basic Fitness</div>
+<div class="card">Advanced Muscle Course</div>
+<div class="card">New Gym Training</div>
+<div class="card">Yoga Training</div>
+<div class="card">Basic Muscle Course</div>
+<div class="card">Body Building Course</div>
+</div>
+</div>
+</section>
+
+<!-- CLASSES -->
+<section id="classes">
+<div class="container">
+<h2 class="section-title">OUR <span>CLASSES</span></h2>
+
+<div class="classes-content">
+
+<div class="classes-list">
+<ul>
+<li>First Training Class</li>
+<li>Second Training Class</li>
+<li>Third Training Class</li>
+<li>Fourth Training Class</li>
+</ul>
+<button class="view-all">View All Schedules</button>
+</div>
+
+<div class="class-details">
+<img src="https://www.thetribestm.com/wp-content/uploads/2023/03/group-fitness-class-1000x565.jpg">
+<h3>First Training Class</h3>
+<p>Training details here.</p>
+<button class="view-schedule">VIEW SCHEDULE</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule">
+<div class="container">
+<h2 class="section-title">CLASSES <span>SCHEDULE</span></h2>
+
+<div class="days">
+<a href="#">Monday</a>
+<a href="#">Tuesday</a>
+<a href="#">Wednesday</a>
+<a href="#">Thursday</a>
+<a href="#">Friday</a>
+</div>
+
+<table class="schedule-table">
+<tr>
+<td>Fitness Class</td>
+<td>10:00AM - 11:30AM</td>
+<td>Trainer</td>
+</tr>
+<tr>
+<td>Body Building</td>
+<td>2:00PM - 3:30PM</td>
+<td>Trainer</td>
+</tr>
+</table>
+
+</div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers">
+<div class="container">
+<h2 class="section-title">EXPERT <span>TRAINERS</span></h2>
+
+<div class="trainers">
+
+<div class="trainer-card">
+<img src="https://themewagon.github.io/training-studio/assets/images/first-trainer.jpg">
+<div class="trainer-info">
+<p class="trainer-role">Strength Trainer</p>
+<h3>Bret D. Bowers</h3>
+</div>
+</div>
+
+<div class="trainer-card">
+<img src="https://themewagon.github.io/training-studio/assets/images/third-trainer.jpg">
+<div class="trainer-info">
+<p class="trainer-role">Power Trainer</p>
+<h3>Paul D. Newman</h3>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="contact-box">
+<h2>Contact Us</h2>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Send</button>
+</div>
+</section>
+
+<!-- MAP — FULLY WORKING -->
+<section id="map">
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=Coimbatore%20Tamil%20Nadu&output=embed"
+      width="100%"
+      height="450"
+      style="border:0;"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+</body>
+</html>
+
